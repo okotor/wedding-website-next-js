@@ -1,0 +1,37 @@
+/*---------------------------
+	Fonts
+----------------------------*/
+
+@font-face {
+    font-family: 'Donalia';
+    src: url('../../../fonts/Donalia.eot');
+    src: url('../../../fonts/Donalia.eot?#iefix') format('embedded-opentype'),
+         url('../../../fonts/Donalia.woff2') format('woff2'),
+         url('../../../fonts/Donalia.woff') format('woff'),
+         url('../../../fonts/Donalia.ttf')  format('truetype'),
+}
+
+// fonts
+$base-font-size: 15;
+$base-font: 'Jost', sans-serif;
+$heading-font: 'Donalia';
+
+
+// color
+$dark-gray: #06002E;
+$body-color: #525252;
+$white: #fff;
+$light: #8188a9;
+$black: #000;
+$small-black: #333;
+$cyan: #525252;
+
+$theme-primary-color: #D66371;
+$theme-primary-color-s2: #DFCACC;
+$body-bg-color: #fff;
+$section-bg-color: #fbf8f8;
+$text-color: #585858;
+$text-light-color: #7b7b7b;
+$heading-color: $dark-gray;
+$border-color: #ebebeb;
+$border-color-s2: #e4ebf2;
