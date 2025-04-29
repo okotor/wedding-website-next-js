@@ -5,6 +5,16 @@ import NavLink from 'next/link'
 const MobileMenu = () => {
     const [menuActive, setMenuState] = useState(false);
 
+    const menus = [
+        { id: 1, title: 'Domů', type: 'scroll', to: 'video' },
+        { id: 2, title: 'Snoubenci', type: 'scroll', to: 'couple' },
+        { id: 3, title: 'Náš příběh', type: 'scroll', to: 'story' },
+        { id: 4, title: 'Kdy & kde', type: 'scroll', to: 'event' },
+        { id: 5, title: 'Galerie', type: 'scroll', to: 'gallery' },
+        { id: 6, title: 'Kontakt', type: 'scroll', to: 'RSVP' },
+        { id: 7, title: 'Blog', type: 'link', link: '/blog' },
+      ];
+
     return (
         <div>
             <div className={`mobileMenu ${menuActive ? 'show' : ''}`}>
@@ -15,20 +25,17 @@ const MobileMenu = () => {
                 </div>
 
                 <ul className="responsivemenu">
-                    {menus.map((item, mn) => (
-                        <li key={mn}>
-                            <NavLink onClick={ClickHandler} href={item.link}>
+                    {menus.map((item) => (
+                        <li key={item.id}>
+                        {item.type === 'scroll' ? (
+                            <Link activeClass="active" to={item.to} spy={true} smooth={true} duration={500}>
                                 {item.title}
-                            </NavLink>
+                            </Link>
+                            ) : (
+                                <NavLink href={item.link}>{item.title}</NavLink>
+                            )}
                         </li>
-                    ))}                                      
-                    <li><Link activeClass="active" to="video" spy={true} smooth={true} duration={500} >Domů</Link></li>
-                    <li><Link activeClass="active" to="couple" spy={true} smooth={true} duration={500} >Snoubenci</Link></li>
-                    <li><Link activeClass="active" to="story" spy={true} smooth={true} duration={500} >Náš příběh</Link></li>
-                    <li><Link activeClass="active" to="event" spy={true} smooth={true} duration={500} >Kdy & kde</Link></li>
-                    <li><Link activeClass="active" to="event" spy={true} smooth={true} duration={500} >Praktické informace</Link></li>
-                    <li><Link activeClass="active" to="gallery" spy={true} smooth={true} duration={500} >Galerie</Link></li>
-                    <li><Link activeClass="active" to="RSVP" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
+                    ))}
                 </ul>
             </div>
 
