@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 import 'photoswipe/dist/photoswipe.css'
 import '../styles/sass/style.scss'
 import Head from "next/head";
-import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute';
+// import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute';
 
 // const noAuthRequired = ['/login']; // Add any other routes that don't require authentication
 

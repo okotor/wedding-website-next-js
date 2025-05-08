@@ -8,8 +8,8 @@ import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
 import RSVP from '../components/RSVP';
 import BrideGrooms from '../components/BrideGrooms/BrideGrooms';
 import EventSection from '../components/EventSection/EventSection';
-import PartnerSection from '../components/PartnerSection/PartnerSection';
 import Footer from '../components/footer/Footer';
+import WeddingTime from '../components/weddingTime/WeddingTime';
 
 
 
@@ -19,13 +19,13 @@ const HomePage = ({ brideName, groomName }) => {
         <Fragment>
             <Navbar hclass={'wpo-site-header-s1'} />
             <Hero6 />
+            <WeddingTime />
             <CoupleSection brideName={brideName} groomName={groomName} />
             <StorySection />
             <EventSection />
             <PortfolioSection />
             <RSVP />
             <BrideGrooms />
-            <PartnerSection />
             <Footer />
             <Scrollbar />
         </Fragment>

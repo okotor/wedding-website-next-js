@@ -2,12 +2,12 @@ import React from 'react'
 const { useState, useEffect } = React;
 
 const TimeCountDown = () => {
-  const [countdownDate] = useState(new Date('08/06/2024').getTime());
+  const [countdownDate] = useState(new Date('2025-07-26').getTime());
   const [state, setState] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
+    days: '0',
+    hours: '00',
+    minutes: '00',
+    seconds: '00',
   });
 
   useEffect(() => {

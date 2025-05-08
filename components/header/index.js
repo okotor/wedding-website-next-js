@@ -41,13 +41,13 @@ const Header = (props) => {
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-2 col-md-2 col-2">
+              {/* <div className="col-lg-2 col-md-2 col-2">
                 <div className="header-right">
                   <Link className="theme-btn" activeClass="active" to="RSVP" spy={true} smooth={true} duration={500}><span className="text">Potvrdit účast</span> <span className="mobile">
                     <i className="fi flaticon-user"></i>
                   </span></Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </nav>
