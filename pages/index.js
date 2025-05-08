@@ -5,7 +5,7 @@ import Scrollbar from '../components/scrollbar'
 import CoupleSection from '../components/CoupleSection/CoupleSection';
 import StorySection from '../components/StorySection/StorySection';
 import PortfolioSection from '../components/PortfolioSection/PortfolioSection';
-import RSVP from '../components/RSVP';
+import WeddingDetailsContent from '../components/WeddingDetailsContent.js/WeddingDetailsContent';
 import BrideGrooms from '../components/BrideGrooms/BrideGrooms';
 import EventSection from '../components/EventSection/EventSection';
 import Footer from '../components/footer/Footer';
@@ -22,9 +22,10 @@ const HomePage = ({ brideName, groomName }) => {
             <WeddingTime />
             <CoupleSection brideName={brideName} groomName={groomName} />
             <StorySection />
+            <WeddingDetailsContent />
             <EventSection />
             <PortfolioSection />
-            <RSVP />
+            {/* <RSVP /> */}
             <BrideGrooms />
             <Footer />
             <Scrollbar />

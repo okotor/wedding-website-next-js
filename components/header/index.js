@@ -35,7 +35,7 @@ const Header = (props) => {
                     <li><Link activeClass="active" to="couple" spy={true} smooth={true} duration={500} >Snoubenci</Link></li>
                     <li><Link activeClass="active" to="story" spy={true} smooth={true} duration={500} >Náš příběh</Link></li>
                     <li><Link activeClass="active" to="event" spy={true} smooth={true} duration={500} >Kdy & kde</Link></li>
-                    <li><Link activeClass="active" to="event" spy={true} smooth={true} duration={500} >Praktické informace</Link></li>
+                    <li><Link activeClass="active" to="info" spy={true} smooth={true} duration={500} >Pr. informace & Dary</Link></li>
                     <li><Link activeClass="active" to="gallery" spy={true} smooth={true} duration={500} >Galerie</Link></li>
                     <li><Link activeClass="active" to="rsvp" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
                   </ul>
