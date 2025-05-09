@@ -1,11 +1,13 @@
-1. FIX LINKS - Praktické Informace, Kontakt
+1. Link app to Azure/Google Cloud
 
-2. HTML findable data from .env
+1.5 feed the media bucket
 
-3. DELETE ÚČAST FORM, SPONSORS
+2. HTML LINK findable data from .env - local & Vercel
 
-4. Add a fullscreen button to the video
+3.5 feed the local .env and Vercel env texts
 
+3. Add a fullscreen button to the video - work on PC and Mobile
 
+4. golden colours
 
-LAST. Activate Login
+LAST. Activate Login Mechanism

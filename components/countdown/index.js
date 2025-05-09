@@ -53,19 +53,19 @@ const TimeCountDown = () => {
       <div className='countdown-wrapper'>
         <div className='time-section'>
           <div className='time'>{state.days || '0'}</div>
-          <small className="time-text">Days</small>
+          <small className="time-text">Dnů</small>
         </div>
         <div className='time-section'>
           <div className='time'>{state.hours || '00'}</div>
-          <small className="time-text">Hours</small>
+          <small className="time-text">Hodin</small>
         </div>
         <div className='time-section'>
           <div className='time'>{state.minutes || '00'}</div>
-          <small className="time-text">Min</small>
+          <small className="time-text">Minut</small>
         </div>
         <div className='time-section'>
           <div className='time'>{state.seconds || '00'}</div>
-          <small className="time-text">Sec</small>
+          <small className="time-text">Vteřin</small>
         </div>
       </div>
     </div>

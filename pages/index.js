@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import Navbar from '../components/Navbar'
 import Hero6 from '../components/hero6/Hero6';
 import Scrollbar from '../components/scrollbar'
@@ -24,7 +24,6 @@ const HomePage = ({ brideName, groomName }) => {
             <WeddingDetailsContent />
             <BrideGrooms />
             <PortfolioSection />
-            {/* <RSVP /> */}
             <Footer />
             <Scrollbar />
         </Fragment>
