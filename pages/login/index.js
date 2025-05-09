@@ -35,7 +35,7 @@ const LoginPage = () => {
         <Grid className="loginWrapper">
             <Grid className="loginForm">
                 <h2>Přihlášení</h2>
-                <p>Přihlášení pro svatební hosty</p>
+                <p>pro svatební hosty</p>
                 <form onSubmit={submitForm}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
