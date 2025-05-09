@@ -34,10 +34,10 @@ const Header = (props) => {
                     <li><Link activeClass="active" to="video" spy={true} smooth={true} duration={500} >Domů</Link></li>
                     <li><Link activeClass="active" to="couple" spy={true} smooth={true} duration={500} >Snoubenci</Link></li>
                     <li><Link activeClass="active" to="story" spy={true} smooth={true} duration={500} >Náš příběh</Link></li>
-                    <li><Link activeClass="active" to="event" spy={true} smooth={true} duration={500} >Kdy & kde</Link></li>
-                    <li><Link activeClass="active" to="info" spy={true} smooth={true} duration={500} >Pr. informace & Dary</Link></li>
+                    <li><Link activeClass="active" to="event" spy={true} smooth={true} duration={500} >Svatební den</Link></li>
+                    <li><Link activeClass="active" to="event" spy={true} smooth={true} duration={500} offset={1300} >Důležité informace</Link></li>
+                    <li><Link activeClass="active" to="bridegrooms" spy={true} smooth={true} duration={500} offset={-130} >Tým</Link></li>
                     <li><Link activeClass="active" to="gallery" spy={true} smooth={true} duration={500} >Galerie</Link></li>
-                    <li><Link activeClass="active" to="rsvp" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
                   </ul>
                 </div>
               </div>

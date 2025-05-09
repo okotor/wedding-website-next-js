@@ -674,7 +674,7 @@
 				font-size: 40px;
 				line-height: 42px;
 				font-size: calc-rem-value(40);
-				color: $dark-gray;
+				// color: $dark-gray;
 
 				@include media-query(1400px) {
 					font-size: 30px;
@@ -688,7 +688,7 @@
 			}
 
 			.time-text {
-				color: #4D4D4D;
+				// color: #4D4D4D;
 				font-weight: 500;
 				font-size: 18px;
 				line-height: 26px;
@@ -1013,7 +1013,7 @@
 			h2 {
 				font-size: 100px;
 				font-weight: 500;
-				color: $white;
+				// color: $white;
 				margin-bottom: 20px;
 
 				@media(max-width:991px) {
@@ -1035,7 +1035,7 @@
 
 			p {
 				font-size: 30px;
-				color: $white;
+				// color: $white;
 				font-weight: 500;
 
 				@media(max-width:767px) {

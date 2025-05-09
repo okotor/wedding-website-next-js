@@ -3,7 +3,7 @@ import React from "react";
 import SectionTitle from "../SectionTitle";
 import timg1 from '/public/images/team/img-1.jpg'
 import timg2 from '/public/images/team/img-2.jpg'
-// import timg3 from '/public/images/team/img-3.jpg'
+import timg3 from '/public/images/team/img-3.jpg'
 // import timg4 from '/public/images/team/img-4.jpg'
 // import timg5 from '/public/images/team/img-5.jpg'
 // import timg6 from '/public/images/team/img-6.jpg'
@@ -16,21 +16,21 @@ const brideGrooms = [
   {
     id:'1',
     tImg:timg1,
-    name:'Leslie Alexander',
-    title:'Brides Brother',     
+    name:'Petr Předfárma',
+    title:'Oddávající',     
  },
  {
     id:'2',
     tImg:timg2,
-    name:'Jenny Wilson',
-    title:'Brides Sister',     
+    name:'Spade Queen',
+    title:'Svědkyně',     
  },
-//  {
-//     id:'3',
-//     tImg:timg3,
-//     name:'Robert Fox',
-//     title:'Brides Brother',     
-//  },
+ {
+    id:'3',
+    tImg:timg3,
+    name:'Pink Hare',
+    title:'Svědek',     
+ },
 //  {
 //     id:'4',
 //     tImg:timg4,
@@ -55,13 +55,13 @@ const brideGrooms = [
 const BrideGrooms = (props) => {
 
   return (
-      <section className={`wpo-team-section ${props.tClass}`}>
+      <section id="bridegrooms" className={`wpo-team-section ${props.tClass}`}>
         <div className="container">
-          <SectionTitle MainTitle={'Bridesmaids & Groomsmen'} />
+          <SectionTitle MainTitle={'Tým'} />
           <div className="wpo-team-wrap">
-            <div className="row">
+            <div className="bridegrooms-grid">
               {brideGrooms.map((brideGroom, tm) => (
-                <div className="col col-lg-4 col-md-6 col-sm-12 col-12" key={tm}>
+                <div className="bridegroom-col" key={tm}>
                     <div className="wpo-team-item">
                         <div className="wpo-team-img">
                             <div className="wpo-team-img-inner">

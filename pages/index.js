@@ -9,7 +9,6 @@ import WeddingDetailsContent from '../components/WeddingDetailsContent.js/Weddin
 import BrideGrooms from '../components/BrideGrooms/BrideGrooms';
 import EventSection from '../components/EventSection/EventSection';
 import Footer from '../components/footer/Footer';
-import WeddingTime from '../components/weddingTime/WeddingTime';
 
 
 
@@ -19,14 +18,13 @@ const HomePage = ({ brideName, groomName }) => {
         <Fragment>
             <Navbar hclass={'wpo-site-header-s1'} />
             <Hero6 />
-            <WeddingTime />
             <CoupleSection brideName={brideName} groomName={groomName} />
             <StorySection />
-            <WeddingDetailsContent />
             <EventSection />
+            <WeddingDetailsContent />
+            <BrideGrooms />
             <PortfolioSection />
             {/* <RSVP /> */}
-            <BrideGrooms />
             <Footer />
             <Scrollbar />
         </Fragment>

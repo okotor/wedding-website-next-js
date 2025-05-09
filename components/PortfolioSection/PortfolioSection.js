@@ -25,7 +25,7 @@ const PortfolioSection = (props) => {
     return (
         <section className={`wpo-portfolio-section section-padding ${props.pSclass}`} id="gallery">
             <div className="container">
-                <SectionTitle MainTitle={'Sweet Captured Moments'} />
+                <SectionTitle MainTitle={'Těšíme se na vás!'} />
                 <div className="sortable-gallery">
                     <div className="row">
                         <div className="col-lg-12">
