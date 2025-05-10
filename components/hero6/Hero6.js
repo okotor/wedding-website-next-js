@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import TimeCountDown from '../countdown';
-import { FaExpand, FaCompress } from 'react-icons/fa'; // Add at the top if using react-icons
+import { FaCompress, FaExpand, FaPause, FaPlay } from 'react-icons/fa'; // Add at the top if using react-icons
 import classes from '../../styles/BackgroundVideo.module.css';
 
 // 25-color palette: black, greys, golds, whites
@@ -225,7 +225,7 @@ const Hero6 = (props) => {
                             onClick={handlePlayVideo}
                             aria-label={isPlaying ? 'Pause video' : 'Play video'}
                         >
-                            {isPlaying ? '⏸' : '▶'}
+                            {isPlaying ? <FaPause /> : <FaPlay />}
                         </button>
                         <button
                             className={classes.FullscreenButton}
