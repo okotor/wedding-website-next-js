@@ -167,3 +167,7 @@ $flaticon-map: (
 .flaticon-dance:before {
     content: map-get($flaticon-map, "dance");
 }
+
+i[class^="flaticon-"], i[class*=" flaticon-"] {
+  color: #ccb300 !important; // Add !important
+}

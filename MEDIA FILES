@@ -1,0 +1,64 @@
+
+Navbar
+
+Hero6 (video/ )
+
+CoupleSection (images/couple)
+
+import coupleImg1 from '/public/images/couple/2.jpg'
+import coupleImg2 from '/public/images/couple/3.jpg'
+
+import shape1 from '/public/images/couple/shape-1.png'
+import shape2 from '/public/images/couple/shape-2.png'
+import shape3 from '/public/images/couple/shape-3.png'
+import shape4 from '/public/images/couple/shape-4.png'
+
+StorySection (images/story )
+
+import sImg1 from '/public/images/story/1.jpg'
+import sImg2 from '/public/images/story/2.jpg'
+import sImg3 from '/public/images/story/3.jpg'
+
+import shape1 from '/public/images/rsvp/shape1.png'
+import shape2 from '/public/images/rsvp/shape2.png'
+
+EventSection (images/event )
+
+Non but can be
+
+WeddingDetailsContent (images/ )
+
+Non but can be
+
+BrideGrooms (images/team )
+
+import timg1 from '/public/images/team/img-1.jpg'
+import timg2 from '/public/images/team/img-2.jpg'
+import timg3 from '/public/images/team/img-3.jpg'
+
+import shape1 from '/public/images/team/shape1.jpg'
+import shape2 from '/public/images/team/shape2.jpg'
+
+PortfolioSection (images/portfolio )
+
+const Portfolios = [
+    {
+        Pimg: '/images/portfolio/1.jpg',
+    },
+    {
+        Pimg: '/images/portfolio/2.jpg',
+    },
+    {
+        Pimg: '/images/portfolio/3.jpg',
+    },
+    {
+        Pimg: '/images/portfolio/4.jpg',
+    },
+    {
+        Pimg: '/images/portfolio/5.jpg',
+    }
+]
+
+Footer
+
+Scrollbar

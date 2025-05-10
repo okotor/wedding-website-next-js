@@ -1,13 +1,11 @@
-1. Link app to Azure/Google Cloud
+1. Link app to Azure/Firebase/Google Cloud - what is the difference?
 
-1.5 feed the media bucket
+2. feed the media bucket 
 
-2. HTML LINK findable data from .env - local & Vercel
+3. Activate Login & Register Mechanism
 
-3.5 feed the local .env and Vercel env texts
+4. Link the media bucket with the webpage
 
-3. Add a fullscreen button to the video - work on PC and Mobile
+3. HTML LINK findable data from .env - local & Vercel
 
-4. golden colours
-
-LAST. Activate Login Mechanism
+4. feed the local .env and Vercel env texts (make sure links work)

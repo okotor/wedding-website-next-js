@@ -125,3 +125,17 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
 .flaticon-dance:before {
     content: "\f124";
 }
+
+i[class^="flaticon-"], i[class*=" flaticon-"] {
+  color: #ccb300 !important;
+}
+
+i.fi.flaticon-dove {
+  color: #ccb300 !important;
+}
+
+i.fi.flaticon-dove,
+.section-title-icon i.fi.flaticon-dove,
+.wpo-section-title .section-title-icon i.fi.flaticon-dove {
+  color: #ccb300 !important;
+}

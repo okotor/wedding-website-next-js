@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import Scrollbar from '../../components/scrollbar';
-import Image from 'next/image';
+// import Image from 'next/image';
 // import wImg from '/public/images/wedding/wedding.jpg';
-import wImg2 from '/public/images/wedding/1.jpg';
-import wImg3 from '/public/images/wedding/2.jpg';
+// import wImg2 from '/public/images/wedding/1.jpg';
+// import wImg3 from '/public/images/wedding/2.jpg';
 
 const WeddingDetailsContent = () => (
   <Fragment>
@@ -30,14 +30,14 @@ const WeddingDetailsContent = () => (
                   rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit.</p>
                 <div className="row mt-4">
                   <div className="col-md-6 col-sm-6 col-12">
-                    <div className="wpo-p-details-img">
+                    {/* <div className="wpo-p-details-img">
                       <Image src={wImg2} alt=""/>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="col-md-6 col-sm-6 col-12">
-                    <div className="wpo-p-details-img">
+                    {/* <div className="wpo-p-details-img">
                       <Image src={wImg3} alt=""/>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>  

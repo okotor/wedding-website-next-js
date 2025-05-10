@@ -14,8 +14,8 @@ const Footer = (props) =>{
             <div className="container">
                 <div className="row">
                     <div className="col col-xs-12">
-                        <p className="copyright"> &copy; 2023 Mylove Template. Design By <Link onClick={ClickHandler}
-                                href="/">wpOceans</Link>. All Rights Reserved.</p>
+                        <p className="copyright"> &copy; 2025 M&T <Link onClick={ClickHandler}
+                                href="/"></Link></p>
                     </div>
                 </div>
             </div>
