@@ -18,7 +18,7 @@
     display: flex;
     gap: 1.5rem;
     position: absolute;
-    top: 80%; /* Adjust this value to move the controls higher or lower (smaller = higher) */
+    top: 87%; /* Adjust this value to move the controls higher or lower (smaller = higher) */
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
