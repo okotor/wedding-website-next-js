@@ -27,6 +27,7 @@
     width: fit-content;
     margin: 0; /* Remove margin so absolute positioning takes effect */
 }
+ 
 
 /* Add some content at the bottom of the video/page */
 .Content {
