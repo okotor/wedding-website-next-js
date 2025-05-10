@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import TimeCountDown from '../countdown';
+import { FaExpand, FaCompress } from 'react-icons/fa'; // Add at the top if using react-icons
 import classes from '../../styles/BackgroundVideo.module.css';
 
 // 25-color palette: black, greys, golds, whites
@@ -101,6 +102,41 @@ const Hero6 = (props) => {
     const [isPlaying, setIsPlaying] = useState(false); // State to track if the video is playing
     const textRef = useRef(null);
     const lastColorRef = useRef(null);
+    const [isFullscreen, setIsFullscreen] = useState(false);
+
+    // Fullscreen handlers
+    const handleFullscreen = () => {
+        const elem = videoRef.current;
+        if (!isFullscreen) {
+            if (elem.requestFullscreen) elem.requestFullscreen();
+            else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+            else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+        } else {
+            if (document.exitFullscreen) document.exitFullscreen();
+            else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+            else if (document.msExitFullscreen) document.msExitFullscreen();
+        }
+    };
+
+    // Listen for fullscreen changes to update state
+    useEffect(() => {
+        const onFullScreenChange = () => {
+            const elem = videoRef.current;
+            const isFs =
+                document.fullscreenElement === elem ||
+                document.webkitFullscreenElement === elem ||
+                document.msFullscreenElement === elem;
+            setIsFullscreen(isFs);
+        };
+        document.addEventListener('fullscreenchange', onFullScreenChange);
+        document.addEventListener('webkitfullscreenchange', onFullScreenChange);
+        document.addEventListener('msfullscreenchange', onFullScreenChange);
+        return () => {
+            document.removeEventListener('fullscreenchange', onFullScreenChange);
+            document.removeEventListener('webkitfullscreenchange', onFullScreenChange);
+            document.removeEventListener('msfullscreenchange', onFullScreenChange);
+        };
+    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -163,6 +199,8 @@ const Hero6 = (props) => {
                     className={classes.Video}
                     loop
                     muted
+                    controlsList="nodownload" // Prevent download and remote playback
+                    disablePictureInPicture
                 >
                     <source src={videoSource} type="video/mp4" />
                     Your browser does not support the video tag.
@@ -178,15 +216,25 @@ const Hero6 = (props) => {
                                         <TimeCountDown/>
                                     </div>
                                 </div>
-                            </div>
-                            <button
-                                className={`${classes.PlayButton} theme-btn`} // Add a custom class for styling
-                                onClick={handlePlayVideo}
-                            >
-                                {isPlaying ? '⏸' : '▶'}
-                            </button>
+                            </div>  
                         </div>
                     </section>
+                    <div className={classes.VideoControls}>
+                        <button
+                            className={classes.PlayButton}
+                            onClick={handlePlayVideo}
+                            aria-label={isPlaying ? 'Pause video' : 'Play video'}
+                        >
+                            {isPlaying ? '⏸' : '▶'}
+                        </button>
+                        <button
+                            className={classes.FullscreenButton}
+                            onClick={handleFullscreen}
+                            aria-label={isFullscreen ? 'Exit fullscreen' : 'Enter fullscreen'}
+                        >
+                            {isFullscreen ? <FaCompress /> : <FaExpand />}
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>

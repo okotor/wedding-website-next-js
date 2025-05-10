@@ -13,38 +13,66 @@
     object-fit: cover;
   }
 
-  
-
-  /* Add some content at the bottom of the video/page */
-  .Content {
+  /* --- Video Controls for Hero6 --- */
+.VideoControls {
+    display: flex;
+    gap: 1.5rem;
     position: absolute;
-    top:50%;
+    top: 80%; /* Adjust this value to move the controls higher or lower (smaller = higher) */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    z-index: 20; /* Make sure it's above the video */
+    width: fit-content;
+    margin: 0; /* Remove margin so absolute positioning takes effect */
+}
+
+/* Add some content at the bottom of the video/page */
+.Content {
+  position: absolute;
+    top: 50%;
+    left: 0;
     width: 100%;
     transform: translateY(-50%);
-  }
+    z-index: 5; /* Make sure it's above the video */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    .PlayButton {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 80px;
-      height: 80px;
-      border-radius: 50%; /* Makes the button round */
-      background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-      color: #fff;
-      font-size: 2rem; /* Larger font size for the play/pause symbols */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  }
+.PlayButton, .FullscreenButton {
+    background: rgba(0,0,0,0.7);
+    border: none;
+    border-radius: 50%;
+    width: 72px;         /* Bigger */
+    height: 72px;        /* Bigger */
+    color: #fff;
+    font-size: 2.5rem;   /* Bigger */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
 
-  .PlayButton:hover {
-      background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
-  }
+.PlayButton:hover, .FullscreenButton:hover {
+    background: rgba(191, 161, 74, 0.85); /* gold highlight */
+    color: #222;
+}
+
+@media (max-width: 600px) {
+    .VideoControls {
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+    .PlayButton, .FullscreenButton {
+        width: 64px;
+        height: 64px;
+        font-size: 2rem;
+    }
+}
 
   .SubContent {
       text-align: center;
