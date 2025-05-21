@@ -23,7 +23,7 @@ const Header = (props) => {
               </div>
               <div className="col-lg-2 col-md-6 col-6">
                 <div className="navbar-header">
-                  <NavLink className="navbar-brand logo" href='/'><small>Mea</small>love<span><i
+                  <NavLink className="navbar-brand logo" href='/'><small>M</small>a<small>r</small>i<small>e</small>&<small>T</small>o<small>m</small><span><i
                     className="fi flaticon-dove"></i></span></NavLink>
                 </div>
               </div>

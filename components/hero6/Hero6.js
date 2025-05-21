@@ -203,14 +203,14 @@ const Hero6 = (props) => {
                     disablePictureInPicture
                 >
                     <source src={videoSource} type="video/mp4" />
-                    Your browser does not support the video tag.
+                    Váš prohlížeč nepodporuje video, zkuste prosím jiný.
                 </video>
                 <div className={classes.Content}>
                     <section className="wpo-hero-style-3">
                         <div className="wedding-announcement" ref={textRef}>
                             <div className="couple-text">
-                                <h2>Alana & Glad</h2>
-                                <p>We Are Getting Married July 26, 2025</p>
+                                <h2>Marie & Tom</h2>
+                                <p>Zveme vás na naši svatbu 26. července, 2025</p>
                                 <div className="wpo-wedding-date">
                                     <div className="clock-grids">
                                         <TimeCountDown/>

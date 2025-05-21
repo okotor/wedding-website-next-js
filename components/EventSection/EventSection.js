@@ -6,21 +6,21 @@ import SectionTitleS2 from '../SectionTitleS2'
 const Events = [
     {
         title:'Obřad',
-        li1:'Monday, 25 Sep, 2023 1:00 PM – 4:30 PM',
-        li2:'Estern Star Plaza, Road 123, USA',
-        li3:'+1 234-567-8910'
+        li1:'Sobota, 26. července, 2025 12:00 – 14:00',
+        li2:'Kostel Svatého Ducha, Staré Město u Uherského Hradiště 3, 686 03 ',
+        // li3:'+1 234-567-8910'
     },
     {
         title:'Hostina',
-        li1:'Monday, 25 Sep, 2023 1:00 PM – 4:30 PM',
-        li2:'Estern Star Plaza, Road 123, USA',
-        li3:'+1 234-567-8910'
+        li1:'Sobota, 26. července, 2025 14:30 – 23:59',
+        li2:'Turistické centrum Velehrad, Salašská 62, 687 06',
+        // li3:'+1 234-567-8910'
     },
     {
         title:'Možnosti ubytování',
-        li1:'Monday, 25 Sep, 2023 1:00 PM – 4:30 PM',
-        li2:'Estern Star Plaza, Road 123, USA',
-        li3:'+1 234-567-8910'
+        li1:'V církevních budovách na Velehradě (Stojanov, Koleje gymnázia) je bohužel pro velikost akcí v tuto dobu kapacita míst vyčerpána',
+        li2:'Doporučujeme ubytování v okolí Velehradu, Uherského Hradiště a Starého Města',
+        li3:'Rádi vás uvudíme v místě hostiny již v pátek nebo v neděli, kdy budeme uklízet.'
     },
 
 ]
