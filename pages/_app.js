@@ -13,25 +13,26 @@ import "slick-carousel/slick/slick-theme.css";
 import 'photoswipe/dist/photoswipe.css'
 import '../styles/sass/style.scss'
 import Head from "next/head";
-// import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute';
 
-// const noAuthRequired = ['/login']; // Add any other routes that don't require authentication
+import ProtectedRoute from '../components/ProtectedRoute/ProtectedRoute';
+
+const noAuthRequired = ['/login']; // Add any other routes that don't require authentication
 
 function MyApp({ Component, pageProps, router }) {
-  // const isProtected = !noAuthRequired.includes(router.pathname);
+  const isProtected = !noAuthRequired.includes(router.pathname);
 
   return (
     <div>
       <Head>
         <title>Marie & Tom - Svatební webová stránka</title>
       </Head>
-      {/* {isProtected ? (
-        <ProtectedRoute> */}
+      {isProtected ? (
+        <ProtectedRoute>
           <Component {...pageProps} />
-        {/* </ProtectedRoute>
+        </ProtectedRoute>
       ) : (
         <Component {...pageProps} />
-      )} */}
+      )}
       <ToastContainer />
     </div>
   );

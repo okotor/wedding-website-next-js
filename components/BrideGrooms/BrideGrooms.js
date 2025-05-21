@@ -16,19 +16,19 @@ const brideGrooms = [
   {
     id:'1',
     tImg:timg1,
-    name:'Petr Předfárma',
+    name:'Mons. Pavel Posád',
     title:'Oddávající',     
  },
  {
     id:'2',
     tImg:timg2,
-    name:'Spade Queen',
+    name:'Ludmila Němcová',
     title:'Svědkyně',     
  },
  {
     id:'3',
     tImg:timg3,
-    name:'Pink Hare',
+    name:'Štěpán Juránek',
     title:'Svědek',     
  },
 //  {

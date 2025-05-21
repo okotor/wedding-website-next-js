@@ -15,7 +15,7 @@ const StorySection = (props) => {
         <section className="story-section section-padding" id="story">
             <div className="container">
                 <div className="row">
-                    <SectionTitle MainTitle={'Our Sweet Story'} />
+                    <SectionTitle MainTitle={'Náš příběh'} />
                 </div>
                 <div className="row">
                     <div className="col col-xs-12">
@@ -36,14 +36,14 @@ const StorySection = (props) => {
                                     </div>
                                     <div className="col col-lg-6 col-12">
                                         <div className="story-text left-align-text fadeInRightSlow" data-wow-duration="2000ms">
-                                            <h3>First Time We Meet</h3>
-                                            <span className="date">19 Jan 2018</span>
+                                            <h3>Setkání po letech</h3>
+                                            <span className="date">10. září 2024</span>
                                             <div className="line-shape">
                                                 <div className="outer-ball">
                                                     <div className="inner-ball"></div>
                                                 </div>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, constetur adicng elit. Ultricies nulla mi tempus mcorper for praesent. Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. Malesuada enim ac amurna tempor vel duis.</p>
+                                            <p>Vlny věčnosti se nikam neženou. A tak ačkoliv se Maruška s Tomem znali již téměř 10 let, oheň zaplál až právě tohoto dne kdy je vítr zavál kam jinam než do srdce Velkomoravské říše. Quod mysterium temporis et loci.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -52,14 +52,14 @@ const StorySection = (props) => {
                                 <div className="row align-items-center">
                                     <div className="col col-lg-6 col-12 order-lg-1 order-2 text-holder left-text">
                                         <div className="story-text right-align-text fadeInLeftSlow" data-wow-duration="2000ms">
-                                            <h3>Our First Date</h3>
-                                            <span className="date">22 May 2021</span>
+                                            <h3>Oficiálně spolu</h3>
+                                            <span className="date">22. října 2024</span>
                                             <div className="line-shape s2">
                                                 <div className="outer-ball">
                                                     <div className="inner-ball"></div>
                                                 </div>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, constetur adicng elit. Ultricies nulla mi tempus mcorper for praesent. Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. Malesuada enim ac amurna tempor vel duis.</p>
+                                            <p>Celých šest srdceryvných týdnu trvalo upevnit se v tom, kterým směrem se tito dva chtějí vydat. Gradum proximum facere constituerunt!</p>
                                         </div>
                                     </div>
                                     <div className="col col-lg-6 col-12 order-lg-2 order-1">
@@ -84,14 +84,14 @@ const StorySection = (props) => {
                                     </div>
                                     <div className="col col-lg-6 col-12">
                                         <div className="story-text left-align-text fadeInRightSlow" data-wow-duration="2000ms">
-                                            <h3>She Said Yes!</h3>
-                                            <span className="date">15 June 2023</span>
+                                            <h3>Marie řekla ANO!</h3>
+                                            <span className="date">21. února 2025</span>
                                             <div className="line-shape">
                                                 <div className="outer-ball">
                                                     <div className="inner-ball"></div>
                                                 </div>
                                             </div>
-                                            <p>Lorem ipsum dolor sit amet, constetur adicng elit. Ultricies nulla mi tempus mcorper for praesent. Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. Malesuada enim ac amurna tempor vel duis.</p>
+                                            <p>Netrvalo dlouho, když se jejich plachtící srdce již dále nemohly držeti při zemi a jejich hvězdička právě vzlétla do výšin. A kde jinde než? Velehrad in principio, Velehrad in fine, Velehrad in aeternum.</p>
                                         </div>
                                     </div>
                                 </div>

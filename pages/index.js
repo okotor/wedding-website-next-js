@@ -10,15 +10,13 @@ import BrideGrooms from '../components/BrideGrooms/BrideGrooms';
 import EventSection from '../components/EventSection/EventSection';
 import Footer from '../components/footer/Footer';
 
-
-
-const HomePage = ({ brideName, groomName }) => {
+const HomePage = () => {
 
     return (
         <Fragment>
             <Navbar hclass={'wpo-site-header-s1'} />
             <Hero6 />
-            <CoupleSection brideName={brideName} groomName={groomName} />
+            <CoupleSection />
             <StorySection />
             <EventSection />
             <WeddingDetailsContent />
@@ -31,12 +29,3 @@ const HomePage = ({ brideName, groomName }) => {
 };
 
 export default HomePage;
-
-export async function getStaticProps() {
-    return {
-      props: {
-        brideName: process.env.BRIDE_NAME || 'Bride Name',
-        groomName: process.env.GROOM_NAME || 'Groom Name',
-      },
-    };
-  }

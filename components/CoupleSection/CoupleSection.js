@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
-import coupleImg1 from '/public/images/couple/2.jpg'
+// import coupleImg1 from '/public/images/couple/2.jpg'
 import coupleImg2 from '/public/images/couple/3.jpg'
 
 import shape1 from '/public/images/couple/shape-1.png'
@@ -8,10 +8,11 @@ import shape2 from '/public/images/couple/shape-2.png'
 import shape3 from '/public/images/couple/shape-3.png'
 import shape4 from '/public/images/couple/shape-4.png'
 import Image from 'next/image';
+import ImageKitImage from '../ImageKitImage/ImageKitImage';
 
 
 
-const CoupleSection = ( { brideName, groomName, cClass } ) => {
+const CoupleSection = ( { cClass } ) => {
 
     return (
         <section className={`couple-section section-padding ${cClass}`} id="couple">
@@ -23,7 +24,7 @@ const CoupleSection = ( { brideName, groomName, cClass } ) => {
                                 <div className="row align-items-center">
                                     <div className="col-lg-4">
                                         <div className="couple-img">
-                                            <Image src={coupleImg1} alt="" />
+                                            <ImageKitImage path="/default-image.jpg" alt="Bride" width={540} height={540} />
                                             <div className="couple-shape">
                                                 <Image src={shape3} alt=""/>
                                             </div>
@@ -31,7 +32,7 @@ const CoupleSection = ( { brideName, groomName, cClass } ) => {
                                     </div>
                                     <div className="col-lg-7">
                                         <div className="couple-text">
-                                            <h3>{brideName}</h3>
+                                            <h3>Marie Němcová</h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
                                                 vitae nisl. Erat fringilla pellentesque amet tempus. Commodo mi vitae,
                                                 sed sagittis blandit. Leo netus magna fusce ac turpis mauris maecenas
@@ -52,7 +53,7 @@ const CoupleSection = ( { brideName, groomName, cClass } ) => {
                                 <div className="row align-items-center">
                                     <div className="col-lg-7 order-lg-1 order-2">
                                         <div className="couple-text">
-                                            <h3>{groomName}</h3>
+                                            <h3>Tomáš Hájek</h3>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
                                                 vitae nisl. Erat fringilla pellentesque amet tempus. Commodo mi vitae,
                                                 sed sagittis blandit. Leo netus magna fusce ac turpis mauris maecenas
@@ -69,7 +70,7 @@ const CoupleSection = ( { brideName, groomName, cClass } ) => {
                                     </div>
                                     <div className="col-lg-4 order-lg-2 order-1">
                                         <div className="couple-img">
-                                            <Image src={coupleImg2} alt="" />
+                                            <ImageKitImage path="/default-image2.JPG" alt="Groom" width={540} height={540}/>
                                             <div className="couple-shape">
                                                 <Image src={shape4} alt=""/>
                                             </div>
