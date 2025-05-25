@@ -45,8 +45,12 @@
 }
 
 .CountdownBottom {
-  margin-top: auto; /* ⬅️ pushes it to bottom within .Content */
-  margin-bottom: 0.4rem;
+  position: absolute;
+  bottom: 0.5rem; /* ⬅️ Adjust for spacing from edge */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+
   background-color: rgba(0, 0, 0, 0.2);
   padding: 2px 6px;
   border-radius: 4px;
