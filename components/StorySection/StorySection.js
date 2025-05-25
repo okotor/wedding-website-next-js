@@ -43,7 +43,7 @@ const StorySection = (props) => {
                                                     <div className="inner-ball"></div>
                                                 </div>
                                             </div>
-                                            <p>Vlny věčnosti se nikam neženou. A tak ačkoliv se Maruška s Tomem znali již téměř 10 let, oheň zaplál až právě tohoto dne kdy je vítr zavál kam jinam než do srdce Velkomoravské říše. Quod mysterium temporis et loci.</p>
+                                            <p>Vlny věčnosti se nikam neženou. A tak ačkoliv se Maruška s Tomem potkali již téměř před 10 lety, oheň zaplál až právě tohoto dne kdy je vítr zavál kam jinam než do srdce Velkomoravské říše. Quod mysterium temporis et loci.</p>
                                         </div>
                                     </div>
                                 </div>
