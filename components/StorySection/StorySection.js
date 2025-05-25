@@ -3,6 +3,7 @@ import SectionTitle from '../SectionTitle'
 import sImg1 from '/public/images/story/1.jpg'
 import sImg2 from '/public/images/story/2.jpg'
 import sImg3 from '/public/images/story/3.jpg'
+import sImg4 from '/public/images/story/4.jpg'
 
 import shape1 from '/public/images/rsvp/shape1.png'
 import shape2 from '/public/images/rsvp/shape2.png'
@@ -92,6 +93,30 @@ const StorySection = (props) => {
                                                 </div>
                                             </div>
                                             <p>Netrvalo dlouho, když se jejich plachtící srdce již dále nemohly držeti při zemi a jejich hvězdička právě vzlétla do výšin. A kde jinde než? Velehrad in principio, Velehrad in fine, Velehrad in aeternum.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="story-timeline-item">
+                                <div className="row align-items-center">
+                                    <div className="col col-lg-6 col-12">
+                                        <div className="img-holder right-align-text left-site right-heart">
+                                            <Image src={sImg4} alt="stroy" className="img img-responsive fadeInLeftSlow" data-wow-duration="1500ms"/>
+                                                <span className="heart">
+                                                    <i className="fi flaticon-dove"></i>
+                                                </span>
+                                        </div>
+                                    </div>
+                                    <div className="col col-lg-6 col-12">
+                                        <div className="story-text left-align-text fadeInRightSlow" data-wow-duration="2000ms">
+                                            <h3>Trojice je super!</h3>
+                                            <span className="date">Už furt!</span>
+                                            <div className="line-shape">
+                                                <div className="outer-ball">
+                                                    <div className="inner-ball"></div>
+                                                </div>
+                                            </div>
+                                            <p>Manželství je sktriktně trinitární záležitost. Skrze Ducha Svatého se manželé mohou podílet na žvitou Trojice, nevyhání ho-li svým jednáním.</p>
                                         </div>
                                     </div>
                                 </div>
