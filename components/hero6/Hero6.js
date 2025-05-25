@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+// import { Stream } from '@cloudflare/stream-react';
 import TimeCountDown from '../countdown';
 import { FaCompress, FaExpand, FaPause, FaPlay } from 'react-icons/fa'; // Add at the top if using react-icons
 import classes from '../../styles/BackgroundVideo.module.css';
@@ -97,14 +98,21 @@ function getBestPaletteColor(imageData, sampleSize) {
 
 
 const Hero6 = (props) => {
-    const videoSource = "/videos/wedding-trailer.mp4";
-    const videoRef = useRef(null); // Reference to the video element
-    const [isPlaying, setIsPlaying] = useState(false); // State to track if the video is playing
+    // const cloudflareVideoId = 'cb963d0458bf2f09e82e1ee39f512b72';
+    // const videoSource = "/videos/wedding-trailer.mp4";
+    const videoSource = "https://marian-courses-bucket.s3.amazonaws.com/public/intro-vid.mp4";
+
+
+    const cloudflarePlayerRef = useRef(null);
+    const videoRef = useRef(null); // Reference to the SAMPLE video element
+    const playerWrapperRef = useRef(null);
     const textRef = useRef(null);
     const lastColorRef = useRef(null);
-    const [isFullscreen, setIsFullscreen] = useState(false);
 
-    // Fullscreen handlers
+    const [isPlaying, setIsPlaying] = useState(false); // State to track if the video is playing
+    const [isFullscreen, setIsFullscreen] = useState(false);
+    
+
     const handleFullscreen = () => {
         const elem = videoRef.current;
         if (!isFullscreen) {
@@ -129,13 +137,7 @@ const Hero6 = (props) => {
             setIsFullscreen(isFs);
         };
         document.addEventListener('fullscreenchange', onFullScreenChange);
-        document.addEventListener('webkitfullscreenchange', onFullScreenChange);
-        document.addEventListener('msfullscreenchange', onFullScreenChange);
-        return () => {
-            document.removeEventListener('fullscreenchange', onFullScreenChange);
-            document.removeEventListener('webkitfullscreenchange', onFullScreenChange);
-            document.removeEventListener('msfullscreenchange', onFullScreenChange);
-        };
+        return () => document.removeEventListener('fullscreenchange', onFullScreenChange);
     }, []);
 
     useEffect(() => {
@@ -179,46 +181,69 @@ const Hero6 = (props) => {
         return () => clearInterval(interval);
     }, []);
 
+    // ✅ Play/pause both videos in sync
+    // const handlePlayPause = () => {
+    //     const sampleVideo = videoRef.current;
+    //     const cloudflarePlayer = cloudflarePlayerRef.current;
+
+    //     if (isPlaying) {
+    //         // Pause both
+    //         if (sampleVideo) sampleVideo.pause();
+    //         if (cloudflarePlayer && cloudflarePlayer.pause) cloudflarePlayer.pause();
+    //     } else {
+    //         // Play both
+    //         if (sampleVideo) {
+    //             sampleVideo.muted = true;
+    //             sampleVideo.play();
+    //         }
+    //         if (cloudflarePlayer && cloudflarePlayer.play) cloudflarePlayer.play();
+    //     }
+
+    //     setIsPlaying(!isPlaying);
+    // };
+
     const handlePlayVideo = () => {
-        if (videoRef.current) {
-            if (!isPlaying) {
-                videoRef.current.muted = false; // Unmute the video
-                videoRef.current.play(); // Play the video
-            } else {
-                videoRef.current.pause(); // Pause the video
-            }
-            setIsPlaying(!isPlaying); // Toggle the playing state
+        const video = videoRef.current;
+        if (!video) return;
+
+        if (!isPlaying) {
+            video.muted = false;
+            video.play();
+        } else {
+            video.pause();
         }
+        setIsPlaying(!isPlaying);
     };
 
     return (
         <section id="video" className="video-area">
             <div className={classes.Container}>
-                <video
-                    ref={videoRef}
-                    className={classes.Video}
-                    loop
-                    muted
-                    controlsList="nodownload" // Prevent download and remote playback
-                    disablePictureInPicture
-                >
-                    <source src={videoSource} type="video/mp4" />
-                    Váš prohlížeč nepodporuje video, zkuste prosím jiný.
-                </video>
+                {/* <div ref={playerWrapperRef} className={classes.Video}> */}
+                    {/* Cloudflare Stream player */}
+                    {/* <Stream
+                        controls
+                        src={cloudflareVideoId}
+                        className="w-full h-full"
+                        muted={false}
+                        playerRef={cloudflarePlayerRef}
+                    /> */}
+
+                    {/* S3 video element */}
+                    <video
+                        ref={videoRef}
+                        className={classes.Video}
+                        src={videoSource}
+                        loop
+                        muted
+                        controlsList="nodownload"
+                        disablePictureInPicture
+                    >
+                        <source src={videoSource} type="video/mp4" />
+                    Your browser does not support the video tag.
+                     </video>
+                {/* </div> */}
+                
                 <div className={classes.Content}>
-                    <section className="wpo-hero-style-3">
-                        <div className="wedding-announcement" ref={textRef}>
-                            <div className="couple-text">
-                                <h2>Marie & Tom</h2>
-                                <p>Zveme vás na naši svatbu 26. července, 2025</p>
-                                <div className="wpo-wedding-date">
-                                    <div className="clock-grids">
-                                        <TimeCountDown/>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                    </section>
                     <div className={classes.VideoControls}>
                         <button
                             className={classes.PlayButton}
@@ -235,6 +260,20 @@ const Hero6 = (props) => {
                             {isFullscreen ? <FaCompress /> : <FaExpand />}
                         </button>
                     </div>
+                    <section className="wpo-hero-style-3">
+                        <div className="wedding-announcement" ref={textRef}>
+                            <div className="couple-text">
+                                <div className="wpo-wedding-date">
+                                    <div className="clock-grids">
+                                        <div className={classes.CountdownBottom}>
+                                            <TimeCountDown />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        {/* ⬇️ Move countdown to bottom of video */}
+                    </section>
                 </div>
             </div>
         </section>

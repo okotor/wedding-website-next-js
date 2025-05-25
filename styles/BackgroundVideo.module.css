@@ -9,7 +9,7 @@
 /* Style the video: 100% width and height to cover the entire window */
 .Video {
     width: 100%;
-    height: 950px;
+    height: 100%;
     object-fit: cover;
   }
 
@@ -18,7 +18,8 @@
     display: flex;
     gap: 1.5rem;
     position: absolute;
-    top: 87%; /* Adjust this value to move the controls higher or lower (smaller = higher) */
+    position: absolute;
+    top: 87%;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
@@ -32,14 +33,33 @@
 /* Add some content at the bottom of the video/page */
 .Content {
   position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-    z-index: 5; /* Make sure it's above the video */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* ⬅️ makes positioning within .Content work better */
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Keep text higher */
+}
+
+.CountdownBottom {
+  margin-top: auto; /* ⬅️ pushes it to bottom within .Content */
+  margin-bottom: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: white;
+  white-space: nowrap;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 600px) {
+  .CountdownBottom {
+    bottom: 0.5rem;
+  }
 }
 
 .PlayButton, .FullscreenButton {

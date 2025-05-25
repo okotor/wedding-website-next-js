@@ -25,9 +25,13 @@ const WeddingDetailsContent = () => (
                   quam. Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis
                   sollicitudin diam, elit sit. Et nisi in libero facilisis sed est. Elit curabitur
                   amet risus bibendum. Posuere et eget orci, tempor enim.</p>
-                <p>Hac nibh fermentum nisi, platea condimentum cursus velit dui. Massa volutpat odio
-                  facilisis purus sit elementum. Non, sed velit dictum quam. Id risus pharetra est, at
-                  rhoncus, nec ullamcorper tincidunt. Id aliquet duis sollicitudin diam, elit sit.</p>
+                <ul>
+                  <li>Non saed velit dictum quam risus pharetra esta.</li>
+                  <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
+                  <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
+                  <li>Massa volutpat odio facilisis purus sit elementum.</li>
+                  <li>Elit curabitur amet risus bibendum.</li>
+                </ul>
                 <div className="row mt-4">
                   <div className="col-md-6 col-sm-6 col-12">
                     {/* <div className="wpo-p-details-img">
@@ -45,18 +49,10 @@ const WeddingDetailsContent = () => (
             <div className="col-md-6 col-12">
               <div className="wpo-wedding-single-item list-widget">
                 <div className="wpo-wedding-single-title">
-                  <h3>Děti</h3>
+                  <h3>Děti / Dary</h3>
                 </div>
-                <p>Massa volutpat odio facilisis purus sit elementum. Non, sed velit dictum quam. Id
-                  risus pharetra est, at rhoncus, nec ullamcorper tincidunt. Id aliquet duis
-                  sollicitudin diam.</p>
-                <ul>
-                  <li>Non saed velit dictum quam risus pharetra esta.</li>
-                  <li>Id risus pharetra est, at rhoncus, nec ullamcorper tincidunt.</li>
-                  <li>Hac nibh fermentum nisi, platea condimentum cursus.</li>
-                  <li>Massa volutpat odio facilisis purus sit elementum.</li>
-                  <li>Elit curabitur amet risus bibendum.</li>
-                </ul>
+                <p>Na místě bude hojné vyžítí i pro neodrostlé svatebčany počínaje skákacím hradem přes velkou rovnou pláň až k hřišti plného prolézaček</p>
+                
               </div>
             </div>  
           </div>
@@ -78,7 +74,7 @@ const WeddingDetailsContent = () => (
             <div className="col-md-6 col-12">
               <div className="wpo-wedding-single-item list-widget">
                 <div className="wpo-wedding-single-title">
-                  <h3>Důležité kontakty</h3>
+                  <h3>Dary & Důležité kontakty</h3>
                 </div>
                 <ul>
                   <li>Non saed velit dictum quam risus pharetra esta.</li>
