@@ -18,8 +18,8 @@ const Events = [
     },
     {
         title:'Možnosti ubytování',
-        li1:'V církevních budovách na Velehradě (Stojanov, Koleje gymnázia) je bohužel pro velikost akcí v tuto dobu kapacita míst vyčerpána',
-        li2:'Doporučujeme ubytování v okolí Velehradu, Uherského Hradiště a Starého Města',
+        li1:'Ve všech veřejných ubytovacích zařízeních na Velehradě (Stojanov, internát SGV, Konírna, Sýpka,..) je žel pro četnost akcí v tuto dobu kapacita míst vyčerpána.',
+        li2:'Doporučujeme ubytování v okolí Velehradu, Uherského Hradiště a Starého Města.',
         li3:'Rádi vás uvítáme na místě hostiny již v pátek, kdy budou probíhat přípravy.'
     },
 

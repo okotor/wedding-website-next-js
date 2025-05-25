@@ -260,7 +260,7 @@ const Hero6 = (props) => {
                             {isFullscreen ? <FaCompress /> : <FaExpand />}
                         </button>
                     </div>
-                    <section className="wpo-hero-style-3">
+                    {/* <section className="wpo-hero-style-3">
                         <div className="wedding-announcement" ref={textRef}>
                             <div className="couple-text">
                                 <div className="wpo-wedding-date">
@@ -273,7 +273,7 @@ const Hero6 = (props) => {
                             </div>  
                         </div>
                         {/* ⬇️ Move countdown to bottom of video */}
-                    </section>
+                    {/* </section> */}
                 </div>
             </div>
         </section>

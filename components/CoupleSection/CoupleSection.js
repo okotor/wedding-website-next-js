@@ -33,10 +33,6 @@ const CoupleSection = ( { cClass } ) => {
                                     <div className="col-lg-7">
                                         <div className="couple-text">
                                             <h3>Marie Němcová</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
-                                                vitae nisl. Erat fringilla pellentesque amet tempus. Commodo mi vitae,
-                                                sed sagittis blandit. Leo netus magna fusce ac turpis mauris maecenas
-                                                non.</p>
                                             <div className="social">
                                                 <ul>
                                                     <li><Link href="/"><i className="ti-facebook"></i></Link></li>
@@ -54,10 +50,6 @@ const CoupleSection = ( { cClass } ) => {
                                     <div className="col-lg-7 order-lg-1 order-2">
                                         <div className="couple-text">
                                             <h3>Tomáš Hájek</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor
-                                                vitae nisl. Erat fringilla pellentesque amet tempus. Commodo mi vitae,
-                                                sed sagittis blandit. Leo netus magna fusce ac turpis mauris maecenas
-                                                non.</p>
                                             <div className="social">
                                                 <ul>
                                                     <li><Link href="/"><i className="ti-facebook"></i></Link></li>

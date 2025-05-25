@@ -2,24 +2,13 @@ import React from 'react'
 import { Gallery, Item } from 'react-photoswipe-gallery'
 import SectionTitle from '../SectionTitle'
 
-
 const Portfolios = [
-    {
-        Pimg: '/images/portfolio/1.jpg',
-    },
-    {
-        Pimg: '/images/portfolio/2.jpg',
-    },
-    {
-        Pimg: '/images/portfolio/3.jpg',
-    },
-    {
-        Pimg: '/images/portfolio/4.jpg',
-    },
-    {
-        Pimg: '/images/portfolio/5.jpg',
-    }
-]
+  { Pimg: '/images/portfolio/1.jpg', width: 4240, height: 2832 },
+  { Pimg: '/images/portfolio/2.jpg', width: 4240, height: 2832 },
+  { Pimg: '/images/portfolio/3.jpg', width: 4240, height: 2832 },
+  { Pimg: '/images/portfolio/4.jpg', width: 4240, height: 2832 },
+  { Pimg: '/images/portfolio/5.jpg', width: 4240, height: 2832 },
+];
 
 const PortfolioSection = (props) => {
     return (

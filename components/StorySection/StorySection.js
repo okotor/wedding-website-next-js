@@ -99,24 +99,25 @@ const StorySection = (props) => {
                             </div>
                             <div className="story-timeline-item">
                                 <div className="row align-items-center">
-                                    <div className="col col-lg-6 col-12">
-                                        <div className="img-holder right-align-text left-site right-heart">
-                                            <Image src={sImg4} alt="stroy" className="img img-responsive fadeInLeftSlow" data-wow-duration="1500ms"/>
-                                                <span className="heart">
-                                                    <i className="fi flaticon-dove"></i>
-                                                </span>
-                                        </div>
-                                    </div>
-                                    <div className="col col-lg-6 col-12">
-                                        <div className="story-text left-align-text fadeInRightSlow" data-wow-duration="2000ms">
-                                            <h3>Trojice je super!</h3>
-                                            <span className="date">Už furt!</span>
-                                            <div className="line-shape">
+                                    <div className="col col-lg-6 col-12 order-lg-1 order-2 text-holder left-text">
+                                        <div className="story-text right-align-text fadeInLeftSlow" data-wow-duration="2000ms">
+                                            <h3>Bude svatba :-{')'}</h3>
+                                            <span className="date">26. červenec 2024</span>
+                                            <div className="line-shape s2">
                                                 <div className="outer-ball">
                                                     <div className="inner-ball"></div>
                                                 </div>
                                             </div>
-                                            <p>Manželství je sktriktně trinitární záležitost. Skrze Ducha Svatého se manželé mohou podílet na žvitou Trojice, nevyhání ho-li svým jednáním.</p>
+                                            <p>Manželství je povoláním ke společenství osob, které zrcadlí vnitřní život Trojice, a je reálným symbolem nové a věčné smlouvy mezi Kristem a církví.
+                                                Je znamením božské lásky, věrnosti a plodnosti.</p>
+                                        </div>
+                                    </div>
+                                    <div className="col col-lg-6 col-12 order-lg-2 order-1">
+                                        <div className="img-holder left-align-text">
+                                            <Image src={sImg4} alt="stroy" className="img img-responsive fadeInRightSlow" data-wow-duration="1500ms"/>
+                                                <span className="heart">
+                                                    <i className="fi flaticon-dance"></i>
+                                                </span>
                                         </div>
                                     </div>
                                 </div>
