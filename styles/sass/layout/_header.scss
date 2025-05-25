@@ -1883,3 +1883,13 @@ ul.smothscroll a:hover {
         line-height: 25px;
     }
 }
+
+/* This targets all navbar links */
+.navbar-nav li a {
+  color: gold !important;
+}
+
+/* Optional: hover effect */
+.navbar-nav li a:hover {
+  color: #ffd700 !important; /* slightly brighter gold */
+}
