@@ -32,7 +32,7 @@ const CoupleSection = ( { cClass } ) => {
                                     </div>
                                     <div className="col-lg-7">
                                         <div className="couple-text">
-                                            <h3>Marie Němcová</h3>
+                                            <h3>Nevěsta Marie</h3>
                                             <div className="social">
                                                 <ul>
                                                     <li><Link href="/"><i className="ti-facebook"></i></Link></li>
@@ -49,7 +49,7 @@ const CoupleSection = ( { cClass } ) => {
                                 <div className="row align-items-center">
                                     <div className="col-lg-7 order-lg-1 order-2">
                                         <div className="couple-text">
-                                            <h3>Tomáš Hájek</h3>
+                                            <h3>Ženich Tom</h3>
                                             <div className="social">
                                                 <ul>
                                                     <li><Link href="/"><i className="ti-facebook"></i></Link></li>

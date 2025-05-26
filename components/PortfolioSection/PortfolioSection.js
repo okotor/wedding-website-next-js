@@ -26,8 +26,8 @@ const PortfolioSection = (props) => {
                                                 <Item
                                                     original={portfolio.Pimg}
                                                     thumbnail={portfolio.Pimg}
-                                                    width="600"
-                                                    height="700"
+                                                    width={portfolio.width}
+                                                    height={portfolio.height}
                                                 >
                                                     {({ ref, open }) => (
                                                         <img ref={ref} onClick={open} src={portfolio.Pimg} />

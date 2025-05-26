@@ -24,10 +24,10 @@ const LoginPage = () => {
         e.preventDefault();
         const success = login(value.email, value.password);
         if (success) {
-            toast.success('Login successful!');
+            toast.success('Úspěšné přihlášení!');
             router.push('/'); // Redirect to the homepage or any other page
         } else {
-            toast.error('Invalid credentials!');
+            toast.error('Neplatné přihlašovací údaje!');
         }
     };
 

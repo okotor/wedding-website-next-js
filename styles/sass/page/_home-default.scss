@@ -955,6 +955,7 @@
 		height: 430px;
 		content: "";
 		background: url(/images/event/bg.jpg) no-repeat center center;
+		background-size: cover; // Add this line
 		z-index: -1;
 	}
 
