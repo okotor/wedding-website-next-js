@@ -17,7 +17,7 @@ const WeddingDetailsContent = () => (
                 {/* <div className="wpo-wedding-single-main-img">
                   <Image src={wImg} alt=""/>
                 </div> */}
-                <div className="wpo-wedding-single-title">
+                <div className="wpo-wedding-single-title" id="important-info">
                   <h3>Program</h3>
                 </div>
                 <br/>

@@ -16,14 +16,14 @@ const style = {
 };
 
 
-export default function LocationMap() {
+export default function LocationMap( mapSrc ) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+      <Button onClick={handleOpen}>Otevřít na Google Maps</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -34,11 +34,16 @@ export default function LocationMap() {
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Location Map
           </Typography>
-          <button className='event-modal-close' onClick={handleClose}><i className='fa fa-close'></i></button>
           <div className="modalBody modal-body">
-            <div className="modalBody modal-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147703055!2d-74.11976314309273!3d40.69740344223377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1547528325671"></iframe>
-            </div>
+            <iframe
+              src={mapSrc}
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </Box>
       </Modal>
