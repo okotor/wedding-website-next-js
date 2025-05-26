@@ -5,6 +5,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { useRouter } from 'next/router'
 import useAuthStore from '../../store/AuthStore';
+import styles from './Login.module.css';
 
 const LoginPage = () => {
 
@@ -32,15 +33,15 @@ const LoginPage = () => {
     };
 
     return (
-        <Grid className="loginWrapper">
-            <Grid className="loginForm">
+        <Grid className={styles.loginWrapper}>
+            <Grid className={styles.loginForm}>
                 <h2>Přihlášení</h2>
                 <p>pro svatební hosty</p>
                 <form onSubmit={submitForm}>
                     <Grid container spacing={3}>
                         <Grid item xs={12}>
                             <TextField
-                                className="inputOutline"
+                                className={styles.inputOutline}
                                 fullWidth
                                 placeholder="E-mail"
                                 value={value.email}
