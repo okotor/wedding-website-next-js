@@ -1,22 +1,26 @@
 import React from 'react'
-import LocationMap from '../Modal'
+import Image from 'next/image'
 import SectionTitleS2 from '../SectionTitleS2'
+import obradImg1 from '/public/images/event/obrad-image1.jpg';
+import hostinaImg3 from '/public/images/event/hostina-image3.jpg';
+
 
 
 const Events = [
     {
         title:'Obřad',
-        li1:'Sobota, 26. července, 2025 12:00 – 14:00',
-        li2:'Kostel Svatého Ducha, Staré Město u Uherského Hradiště 3, 686 03 ',
-        mapSrc: 'https://maps.app.goo.gl/7VtQY5m8trHfAayQA'
+        li1:'Sobota, 26. července, 2025, 12:00',
+        li2:'Kostel Svatého Ducha, Staré Město u Uherského Hradiště 3, PSČ: 686 03 ',
+        mapSrc: 'https://maps.app.goo.gl/7VtQY5m8trHfAayQA',
         // li3:'+1 234-567-8910'
+        images: [obradImg1]
     },
     {
         title:'Hostina',
-        li1:'Sobota, 26. července, 2025 14:30 – 23:59',
-        li2:'Turistické centrum Velehrad, Salašská 62, 687 06',
-        mapSrc: 'https://maps.app.goo.gl/jXbtx8Hj9wxfSDPu7'
-        // li3:'+1 234-567-8910'
+        li1:'Sobota, 26. července, 2025, 14:30 – 23:59',
+        li2:'Turistické centrum Velehrad, Velehrad, Salašská 62, PSČ: 687 06 ',
+        mapSrc: 'https://maps.app.goo.gl/jXbtx8Hj9wxfSDPu7',
+        images: [hostinaImg3]
     },
     {
         title:'Možnosti ubytování',
@@ -44,6 +48,17 @@ const EventSection = (props) => {
                                             <li>{event.li1}</li>
                                             <li>{event.li2}</li>
                                             <li>{event.li3}</li>
+                                            {event.images && event.images.map((img, index) => (
+                                            <li key={index}>
+                                                <Image
+                                                    src={img}
+                                                    alt={`${event.title} obrázek ${index + 1}`}
+                                                    style={{ borderRadius: '8px' }}
+                                                    width={800}
+                                                    height={600}
+                                                />
+                                            </li>
+                                        ))}
                                         </ul>
                                     </div>
                                 </div>

@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react';
 import Scrollbar from '../../components/scrollbar';
 import Image from 'next/image';
-// import wImg from '/public/images/wedding/wedding.jpg';
-// import wImg2 from '/public/images/wedding/1.jpg';
+import wImg from '/public/images/wedding/wedding.jpg';
+import wImg2 from '/public/images/wedding/parkovani.jpg';
 // import wImg3 from '/public/images/wedding/2.jpg';
+
 import wImg4 from '/public/images/wedding/QR-Photos.jpg';
+import wImg5 from '/public/images/wedding/deti1.jpg';
+import wImg6 from '/public/images/wedding/deti2.jpg';
 
 const WeddingDetailsContent = () => (
   <Fragment>
@@ -27,10 +30,16 @@ const WeddingDetailsContent = () => (
                   <li>15:30 Krájení svatebního dortu</li>
                   <li>15:40 Gratulace novomanželům</li>
                   <li>16:15 Focení novomanželů</li>
-                  <li>16:15 Dobrovolné icebreaking aktivity pro svatební hosty</li>
+                  <li>16:15 Dobrovolné aktivity pro svatební hosty</li>
                   <li>18:00 Focení hostů s novomanžely</li>
                   <li>19:00 První tanec</li>
                 </ul>
+                <br/>
+                <Image
+                  src={wImg}
+                  alt="belgian chocolates"
+                  style={{ borderRadius: '8px' }}
+                />
                 <div className="row mt-4">
                   <div className="col-md-6 col-sm-6 col-12">
                     {/* <div className="wpo-p-details-img">
@@ -52,11 +61,19 @@ const WeddingDetailsContent = () => (
                 </div>
                 <br/>
                 <ul>
-                  <li>V blízkosti kostela vás prosíme o zaparkování na kterémkoliv přijatelném místě. Centrální kostelní parkoviště zde zde bohužel není.</li>
-                  <li>Na místě svatební hostiny bude omezený počet míst vyhrazený pro svatební hosty. V případě jeho naplnění prosíme zaparkujte v okolí. Pokud však budete v placené zóně, nezapomeňte zaplatit denní parkovací poplatek obci 50,- Kč <a href="https://velehrad.parkum.cz/">https://velehrad.parkum.cz/</a></li>
+                  <li>V blízkosti kostela vás prosíme o zaparkování na kterémkoliv přijatelném místě. Parkoviště jsou z obou stran kostela.</li>
+                  <li>Na místě svatební hostiny bude omezený počet parkovacích míst vyhrazený pro svatební hosty (viz foto níže). V případě jeho naplnění prosíme zaparkujte v okolí. Pokud však budete v placené zóně, v jistých částech obce je stanoven parkovací poplatek obci 50,- Kč, viz odkaz (<a href="https://velehrad.parkum.cz/">https://velehrad.parkum.cz/</a>)</li>
                   <li>Materielní výbavu do domácnosti jsme již za ta léta nasbírali a tedy chcete-li nám věnovat svatební dar, budeme rádi za jeho finanční formu.</li>
                   <li>V případě jakýchkoliv dotazů přede dnem svatby nás neváhejte kontaktovat na WhatsAppu, Messengeru nebo formou sms.</li>
+                  <li>Několik dní před svatbou vás přidáme do WhatsApp skupiny, které založíme pro potřeby sdílení nejnovějších informací týkajících se svatby. Jestliže nechcete být součástí této skupiny, dejte nám to prosím vědět dopředu.</li>
+                  <li>V případě, že v den svatby z jakéhokoliv důvodu nebudete moci přijet, kontaktujte prosím svědka Štěpána Juránka na čísle .</li>
                   </ul>
+                  <br/>
+                  <Image
+                  src={wImg2}
+                  alt="belgian chocolates"
+                  style={{ borderRadius: '8px' }}
+                />
               </div>
             </div>
           </div>
@@ -66,14 +83,29 @@ const WeddingDetailsContent = () => (
                 <div className="wpo-wedding-single-title">
                   <h3>Děti</h3>
                 </div>
-                <p>Na místě svatební hostiny bude hojné vyžítí i pro drobnější svatebčany počínaje skákacím hradem přes velkou rovnou pláň až k hřišti plného prolézaček.</p>
+                <p>Na místě svatební hostiny bude hojné vyžítí i pro drobnější svatebčany počínaje skákacím hradem přes velkou rovnou pláň až k hřišti plného prolézaček, fotbalového, basketbalového a skateboardového hřiště.</p>
                 {/* <div className="wpo-p-details-img">
                       <Image src={wImg2} alt=""/>
                     </div> */}
+                  <Image
+                    src={wImg5}
+                    alt="kids"
+                    style={{ borderRadius: '8px' }}
+                  />
+                  <br/>
+                  <Image
+                      src={wImg6}
+                      alt="kids2"
+                      style={{ borderRadius: '8px' }}
+                  />
               </div>
             </div>  
             <div className="col-md-6 col-12">
-              <div className="wpo-wedding-single-item">
+              <div className="wpo-wedding-single-item list-widget">
+                <div className="wpo-wedding-single-title">
+                  <h3>Fotky</h3>
+                </div>
+                <p>Budeme moc rádi za sdílení vašich fotek z celého dne s námi i všemi svatebními hosty níže. Prosíme jen, ať na obřadu fotíte jen z lavice a nechodíte kvůli focení po kostele.</p>
                 <div className="wpo-p-details-img">
                   <Image src={wImg4} alt=""/>
                 </div>
