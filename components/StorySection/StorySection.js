@@ -3,7 +3,7 @@ import SectionTitle from '../SectionTitle'
 import sImg1 from '/public/images/story/1.jpg'
 import sImg2 from '/public/images/story/2.jpg'
 import sImg3 from '/public/images/story/3.jpg'
-import sImg4 from '/public/images/story/4.jpg'
+import sImg4 from '/public/images/story/4.png'
 
 import shape1 from '/public/images/rsvp/shape1.png'
 import shape2 from '/public/images/rsvp/shape2.png'

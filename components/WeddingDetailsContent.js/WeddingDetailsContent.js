@@ -66,7 +66,7 @@ const WeddingDetailsContent = () => (
                   <li>Materielní výbavu do domácnosti jsme již za ta léta nasbírali a tedy chcete-li nám věnovat svatební dar, budeme rádi za jeho finanční formu.</li>
                   <li>V případě jakýchkoliv dotazů přede dnem svatby nás neváhejte kontaktovat na WhatsAppu, Messengeru nebo formou sms.</li>
                   <li>Několik dní před svatbou vás přidáme do WhatsApp skupiny, které založíme pro potřeby sdílení nejnovějších informací týkajících se svatby. Jestliže nechcete být součástí této skupiny, dejte nám to prosím vědět dopředu.</li>
-                  <li>V případě, že v den svatby z jakéhokoliv důvodu nebudete moci přijet, kontaktujte prosím svědka Štěpána Juránka na čísle .</li>
+                  <li>V případě, že v den svatby z jakéhokoliv důvodu nebudete moci přijet, napište prosím sms zprávu svědkovi Štěpánovi Juránkovi na čísle +420 739 447 803.</li>
                   </ul>
                   <br/>
                   <Image
@@ -105,7 +105,7 @@ const WeddingDetailsContent = () => (
                 <div className="wpo-wedding-single-title">
                   <h3>Fotky</h3>
                 </div>
-                <p>Budeme moc rádi za sdílení vašich fotek z celého dne s námi i všemi svatebními hosty níže. Prosíme jen, ať na obřadu fotíte jen z lavice a nechodíte kvůli focení po kostele.</p>
+                <p>Budeme moc rádi za sdílení vašich fotek z celého dne s námi i všemi svatebními hosty skrze QR kód níže. Prosíme jen, ať na obřadu fotíte jen z lavice a nechodíte kvůli focení po kostele.</p>
                 <div className="wpo-p-details-img">
                   <Image src={wImg4} alt=""/>
                 </div>

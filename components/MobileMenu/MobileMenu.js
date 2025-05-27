@@ -10,7 +10,7 @@ const MobileMenu = () => {
         { id: 2, title: 'Snoubenci', type: 'scroll', to: 'couple', offset: 0 },
         { id: 3, title: 'Náš příběh', type: 'scroll', to: 'story', offset: 0 },
         { id: 4, title: 'Svatební den', type: 'scroll', to: 'event', offset: 0 },
-        { id: 5, title: 'Důležité informace', type: 'scroll', to: 'important-info', offset: 0 },
+        { id: 5, title: 'Důležité informace', type: 'scroll', to: 'important-info', offset: -130 },
         { id: 6, title: 'Tým', type: 'scroll', to: 'bridegrooms', offset: -130 },
         { id: 7, title: 'Galerie', type: 'scroll', to: 'gallery', offset: 0 },
     ];
