@@ -108,8 +108,12 @@ const WeddingDetailsContent = () => (
                   <h3>Fotky</h3>
                 </div>
                 <p>Budeme moc rádi za sdílení vašich fotek z celého dne s námi i všemi svatebními hosty skrze QR kód níže. Prosíme jen, ať na obřadu fotíte jen z lavice a nechodíte kvůli focení po kostele.</p>
-                <div className="wpo-p-details-img" style={{ textAlign: 'center' }}>
-                  <Image src={wImg4} alt=""/>
+                <div className="wpo-p-details-img">
+                  <Image
+                    src={wImg4}
+                    alt="QR Code"
+                    style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+                  />
                 </div>
               </div>
             </div>

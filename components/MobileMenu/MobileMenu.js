@@ -8,13 +8,13 @@ const MobileMenu = () => {
     const menuRef = useRef(null);
 
     const menus = [
-        { id: 1, title: 'Domů', type: 'scroll', to: 'video', offset: 0 },
+        { id: 1, title: 'Domů', type: 'scroll', to: 'video', offset: -130 },
         { id: 2, title: 'Snoubenci', type: 'scroll', to: 'couple', offset: -150 },
         { id: 3, title: 'Náš příběh', type: 'scroll', to: 'story', offset: -80 },
         { id: 4, title: 'Svatební den', type: 'scroll', to: 'event', offset: -110 },
         { id: 5, title: 'Důležité informace', type: 'scroll', to: 'important-info', offset: -140 },
         { id: 6, title: 'Tým', type: 'scroll', to: 'bridegrooms', offset: -130 },
-        { id: 7, title: 'Galerie', type: 'scroll', to: 'gallery', offset: 0 },
+        { id: 7, title: 'Galerie', type: 'scroll', to: 'gallery', offset: -100 },
     ];
 
     useEffect(() => {
