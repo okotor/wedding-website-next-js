@@ -73,7 +73,7 @@ const WeddingDetailsContent = () => (
                 <Image
                   src={wImg2}
                   alt="qr payment"
-                  style={{ borderRadius: '8px', width: '300px', height: 'auto' }}
+                  style={{ borderRadius: '8px', width: '275px', height: 'auto' }}
                 />
               </div>
               </div>
