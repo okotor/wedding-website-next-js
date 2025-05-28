@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Scrollbar from '../../components/scrollbar';
 import Image from 'next/image';
 import wImg from '/public/images/wedding/wedding.jpg';
-import wImg2 from '/public/images/wedding/parkovani.jpg';
+import wImg2 from '/public/images/wedding/QR-gifts.jpg';
 // import wImg3 from '/public/images/wedding/2.jpg';
 
 import wImg4 from '/public/images/wedding/QR-Photos.jpg';
@@ -62,18 +62,20 @@ const WeddingDetailsContent = () => (
                 <br/>
                 <ul>
                   <li>V blízkosti kostela vás prosíme o zaparkování na kterémkoliv přijatelném místě. Parkoviště jsou z obou stran kostela.</li>
-                  <li>Na místě svatební hostiny bude omezený počet parkovacích míst vyhrazený pro svatební hosty (viz foto níže). V případě jeho naplnění prosíme zaparkujte v okolí. Pokud však budete v placené zóně, v jistých částech obce je stanoven parkovací poplatek obci 50,- Kč, viz odkaz (<a href="https://velehrad.parkum.cz/">https://velehrad.parkum.cz/</a>)</li>
-                  <li>Materielní výbavu do domácnosti jsme již za ta léta nasbírali a tedy chcete-li nám věnovat svatební dar, budeme rádi za jeho finanční formu.</li>
+                  <li>Na místě svatební hostiny bude omezený počet parkovacích míst vyhrazený pro svatební hosty přímo před budovou Turistického centra. V případě jeho naplnění prosíme zaparkujte v okolí. Pokud však budete v placené zóně, v jistých částech obce je stanoven parkovací poplatek obci 50,- Kč, viz odkaz (<a href="https://velehrad.parkum.cz/">https://velehrad.parkum.cz/</a>)</li>
+                  <li>Materielní výbavu do domácnosti jsme již za ta léta nasbírali a tedy chcete-li nám věnovat svatební dar, budeme rádi za jeho finanční formu na místě nebo na QR kódu níže (příp. na účet 670100-2213443533/6210).</li>
                   <li>V případě jakýchkoliv dotazů přede dnem svatby nás neváhejte kontaktovat na WhatsAppu, Messengeru nebo formou sms.</li>
                   <li>Několik dní před svatbou vás přidáme do WhatsApp skupiny, které založíme pro potřeby sdílení nejnovějších informací týkajících se svatby. Jestliže nechcete být součástí této skupiny, dejte nám to prosím vědět dopředu.</li>
                   <li>V případě, že v den svatby z jakéhokoliv důvodu nebudete moci přijet, napište prosím sms zprávu svědkovi Štěpánovi Juránkovi na čísle +420 739 447 803.</li>
                   </ul>
                   <br/>
-                  <Image
+               <div style={{ textAlign: 'center' }}>
+                <Image
                   src={wImg2}
-                  alt="belgian chocolates"
-                  style={{ borderRadius: '8px' }}
+                  alt="qr payment"
+                  style={{ borderRadius: '8px', width: '300px', height: 'auto' }}
                 />
+              </div>
               </div>
             </div>
           </div>
@@ -106,7 +108,7 @@ const WeddingDetailsContent = () => (
                   <h3>Fotky</h3>
                 </div>
                 <p>Budeme moc rádi za sdílení vašich fotek z celého dne s námi i všemi svatebními hosty skrze QR kód níže. Prosíme jen, ať na obřadu fotíte jen z lavice a nechodíte kvůli focení po kostele.</p>
-                <div className="wpo-p-details-img">
+                <div className="wpo-p-details-img" style={{ textAlign: 'center' }}>
                   <Image src={wImg4} alt=""/>
                 </div>
               </div>
