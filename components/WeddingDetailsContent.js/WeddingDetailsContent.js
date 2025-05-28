@@ -62,7 +62,7 @@ const WeddingDetailsContent = () => (
                 <br/>
                 <ul>
                   <li>V blízkosti kostela vás prosíme o zaparkování na kterémkoliv přijatelném místě. Parkoviště jsou z obou stran kostela.</li>
-                  <li>Na místě svatební hostiny bude omezený počet parkovacích míst vyhrazený pro svatební hosty přímo před budovou Turistického centra. V případě jeho naplnění prosíme zaparkujte v okolí. Pokud však budete v placené zóně, v jistých částech obce je stanoven parkovací poplatek obci 50,- Kč, viz odkaz (<a href="https://velehrad.parkum.cz/">https://velehrad.parkum.cz/</a>)</li>
+                  <li>Na místě svatební hostiny bude omezený počet parkovacích míst vyhrazený pro svatební hosty přímo před budovou Turistického centra. V případě jeho naplnění prosíme zaparkujte v okolí. Pokud však budete v placené zóně, v jistých částech obce je stanoven parkovací poplatek obci 50,- Kč, viz odkaz (<a href="https://velehrad.parkum.cz/">https://velehrad.parkum.cz/</a>).</li>
                   <li>Materielní výbavu do domácnosti jsme již za ta léta nasbírali a tedy chcete-li nám věnovat svatební dar, budeme rádi za jeho finanční formu na místě nebo na QR kódu níže (příp. na účet 670100-2213443533/6210).</li>
                   <li>V případě jakýchkoliv dotazů přede dnem svatby nás neváhejte kontaktovat na WhatsAppu, Messengeru nebo formou sms.</li>
                   <li>Několik dní před svatbou vás přidáme do WhatsApp skupiny, které založíme pro potřeby sdílení nejnovějších informací týkajících se svatby. Jestliže nechcete být součástí této skupiny, dejte nám to prosím vědět dopředu.</li>

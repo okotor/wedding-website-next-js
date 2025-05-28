@@ -14,7 +14,7 @@ const Footer = (props) =>{
             <div className="container">
                 <div className="row">
                     <div className="col col-xs-12">
-                        <p className="copyright"> &copy; 2025 M&T <Link onClick={ClickHandler}
+                        <p className="copyright"> &copy; 2025 M&T, kontakt: +420 774 243 723, cornelius.lundi@gmail.com<Link onClick={ClickHandler}
                                 href="/"></Link></p>
                     </div>
                 </div>
