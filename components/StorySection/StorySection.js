@@ -102,7 +102,7 @@ const StorySection = (props) => {
                                     <div className="col col-lg-6 col-12 order-lg-1 order-2 text-holder left-text">
                                         <div className="story-text right-align-text fadeInLeftSlow" data-wow-duration="2000ms">
                                             <h3>Bude svatba :-{')'}</h3>
-                                            <span className="date">26. červenec 2024</span>
+                                            <span className="date">26. červenec 2025</span>
                                             <div className="line-shape s2">
                                                 <div className="outer-ball">
                                                     <div className="inner-ball"></div>
