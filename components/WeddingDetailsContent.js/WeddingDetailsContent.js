@@ -85,7 +85,7 @@ const WeddingDetailsContent = () => (
                 <div className="wpo-wedding-single-title">
                   <h3>Děti</h3>
                 </div>
-                <p>Na místě svatební hostiny bude hojné vyžítí i pro drobnější svatebčany počínaje skákacím hradem přes velkou rovnou pláň až k hřišti plného prolézaček, fotbalového, basketbalového a skateboardového hřiště.</p>
+                <p>Na místě svatební hostiny bude hojné vyžítí i pro drobnější svatebčany počínaje skákacím hradem přes velkou travnatou pláň až k hřišti plného prolézaček, fotbalového, basketbalového, atletického a skateboardového hřiště.</p>
                 {/* <div className="wpo-p-details-img">
                       <Image src={wImg2} alt=""/>
                     </div> */}
